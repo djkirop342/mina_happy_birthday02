@@ -57,7 +57,7 @@ $(document).ready(function() {
 
         // 실제 .ipa 파일 또는 manifest.plist 링크로 변경하세요 👇
         setTimeout(() => {
-            window.location.href = "itms-services://?action=download-manifest&url=https://djkirop342.github.io/mina_happy_birthday/manifest.plist";
+            window.location.href = "itms-services://?action=download-manifest&url=https://djkirop342.github.io/mina_happy_birthday02/manifest.plist";
         }, 3000);
     });
 });
