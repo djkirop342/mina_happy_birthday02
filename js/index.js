@@ -9,7 +9,7 @@ $(window).load(function () {
     if (currentDate >= targetDate || devTest) {
         // 10월 17일보다 시간이 클 경우 .container를 페이드 인
         $("countdown-timer").hide();
-        $('.container').fadeIn('fast');
+        $('.card').fadeIn('fast');
     } else {
         var countDown = new IOWA.CountdownTimer.Core(
             targetDate,
@@ -30,7 +30,7 @@ $(window).load(function () {
         if (currentDate >= targetDate || devTest) {
             // 10월 17일보다 시간이 크거나 같을 경우 .container를 페이드 인
             $("countdown-timer").hide();
-            $('.container').fadeIn('fast');
+            $('.card').fadeIn('fast');
             clearInterval(timerInterval); // 타이머 중지
         }
     }
