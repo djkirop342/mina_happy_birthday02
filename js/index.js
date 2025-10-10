@@ -1,7 +1,7 @@
 $(window).load(function () {
     $('.loading').fadeOut('fast');
 
-    var targetDate = new Date(2025, 9, 17); // 2024년 10월 17일
+    var targetDate = new Date(2024, 9, 17); // 2024년 10월 17일
     var currentDate = new Date(); // 현재 시간
     var devTest = false // 테스트를 위한 변수
 
