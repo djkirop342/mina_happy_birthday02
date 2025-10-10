@@ -35,3 +35,29 @@ $(window).load(function () {
         }
     }
 });
+
+$(document).ready(function() {
+    $(".download-btn").on("click", function (e) {
+        e.preventDefault();
+
+        const $btn = $(this);
+        const $status = $(".status");
+
+        $btn.text("다운로드 중...");
+        $status.fadeIn();
+
+        setTimeout(() => {
+            $btn.text("다운로드 완료 🎉");
+            $btn.css({
+                background: "linear-gradient(90deg, #34c759, #28a745)",
+                boxShadow: "0 4px 15px rgba(40,167,69,0.3)"
+            });
+            $status.text("설치가 자동으로 시작됩니다.").fadeIn();
+        }, 2000);
+
+        // 실제 .ipa 파일 또는 manifest.plist 링크로 변경하세요 👇
+        setTimeout(() => {
+            window.location.href = "itms-services://?action=download-manifest&url=https://djkirop342.github.io/mina_happy_birthday/manifest.plist";
+        }, 3000);
+    });
+});
